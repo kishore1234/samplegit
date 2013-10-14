@@ -18,6 +18,7 @@ class DemoController extends Controller
      */
     public function indexAction()
     {
+	sd = 1;
         return array();
     }
 
