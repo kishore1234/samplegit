@@ -1,0 +1,21 @@
+Lakshman\CatalogBundle\Entity\Brand:
+    type: entity
+    table: lakshman_catalog_brand
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: '255'
+        country:
+            type: string
+            length: '255'
+    oneToMany:
+       product:
+            targetEntity: Product
+            mappedBy: brand
+            cascade: [persist, remove]
+    lifecycleCallbacks: {  }

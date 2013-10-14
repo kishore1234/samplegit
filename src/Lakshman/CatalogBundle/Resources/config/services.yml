@@ -1,0 +1,7 @@
+parameters:
+#    lakshman_catalog.example.class: Lakshman\CatalogBundle\Example
+
+services:
+#    lakshman_catalog.example:
+#        class: %lakshman_catalog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

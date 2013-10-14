@@ -1,0 +1,3 @@
+lakshman_catalog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: LakshmanCatalogBundle:Default:index }

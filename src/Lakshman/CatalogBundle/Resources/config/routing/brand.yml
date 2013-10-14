@@ -1,0 +1,30 @@
+brand:
+    pattern:  /
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:index" }
+
+brand_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:show" }
+
+brand_new:
+    pattern:  /new
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:new" }
+
+brand_create:
+    pattern:  /create
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:create" }
+    requirements: { _method: post }
+
+brand_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:edit" }
+
+brand_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:update" }
+    requirements: { _method: post|put }
+
+brand_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "LakshmanCatalogBundle:Brand:delete" }
+    requirements: { _method: post|delete }
